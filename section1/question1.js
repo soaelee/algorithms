@@ -16,8 +16,8 @@ function sortSolution(a, b, c) {
 }
 
 console.log(sortSolution(2, 6, 10));
-// BONUS! 객체 정렬하기
 
+// BONUS! 객체 정렬하기
 function sortObjectArr(obj) {
 	const arr = [
 		{ name: 'soae', age: 28 },

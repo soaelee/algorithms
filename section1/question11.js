@@ -1,3 +1,4 @@
+// 대문자 찾아내기
 const solution = str => {
 	let answer = 0;
 	for (let i of str) {

@@ -19,6 +19,7 @@ const arr = [128, 460, 603, 40, 521, 137, 123];
 
 console.log(solution(arr));
 
+// 10의 나머지 이용하기
 const solutionT = (arr) => {
 	let answer = 0;
 	let max = 0;
@@ -38,3 +39,21 @@ const solutionT = (arr) => {
 };
 
 console.log(solutionT(arr));
+
+// reduce 이용
+const solutionR = (arr) => {
+	let answer = 0;
+	let max = 0;
+	for (let i of arr) {
+		let sum = i
+			.toString()
+			.split("")
+			.reduce((prev, cur) => (prev += Number(cur)), 0);
+		if (sum >= max) {
+			max = sum;
+			answer = Math.max(answer, i);
+		}
+	}
+
+	return answer;
+};

@@ -1,4 +1,5 @@
 // 연속 부분수열의 합이 M이하가 되는 경우
+// 이건 이중포문이나 마찬가지, 아래 투포인터를 이용하자
 const solution = (m, arr) => {
 	let answer = 0;
 	let p2 = 0;
@@ -35,4 +36,4 @@ const solutionT = (m, arr) => {
 	return answer;
 };
 
-console.log(solutionT(5, arr3));
+console.log(solutionT(5, arr2));

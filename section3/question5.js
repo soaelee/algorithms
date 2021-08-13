@@ -1,5 +1,5 @@
 // 문자열 중복 갯수
-const solution = (str) => {
+const solution = str => {
 	let answer = [];
 
 	let dup_cnt = 1;
@@ -16,14 +16,14 @@ const solution = (str) => {
 			dup_cnt = 1;
 		}
 	}
-	return answer.join("");
+	return answer.join('');
 };
 
-const str = "KKHSSSSSSSE";
+const str = 'KKHSSSSSSSE';
 
 console.log(solution(str));
 
-const solutionT = (str) => {
+const solutionT = str => {
 	let answer = [];
 
 	let cnt = 1;

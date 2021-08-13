@@ -19,9 +19,9 @@ const solution = (str, alpha) => {
 	return answer;
 };
 
-const str = "teachermode";
+const str = 'teachermode';
 
-console.log(solution(str, "e"));
+console.log(solution(str, 'e'));
 
 // 시간복잡도를 낮추자(앞뒤로 한번씩 돌기)
 const solutionT = (str, alpha) => {
@@ -48,4 +48,4 @@ const solutionT = (str, alpha) => {
 	return answer;
 };
 
-console.log(solutionT(str, "e"));
+console.log(solutionT(str, 'e'));

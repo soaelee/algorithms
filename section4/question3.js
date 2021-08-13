@@ -3,7 +3,7 @@
 
 // M번 중복되는 수를 찾아 count
 
-const solution = (arr) => {
+const solution = arr => {
 	let answer = 0;
 	const test_count = arr.length;
 	const students = arr[0].length;

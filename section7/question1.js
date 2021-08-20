@@ -1,6 +1,5 @@
 // 선택정렬로 오름차순 정렬
 const solution = arr => {
-  let lt = 0;
   for(let i = 0; i < arr.length - 1; i++){
     let idx = i;
     for(let j = i + 1; j < arr.length; j++){

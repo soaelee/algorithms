@@ -9,7 +9,7 @@ const solution = () => {
         continue;
       }
     } else {
-      if (arr[i] < arr[i - 1] && arr[i + 1] > arr[answer[0] - 1]) {
+      if (arr[i] < arr[i - 1] && arr[i + 1] >= arr[answer[0] - 1]) {
         answer.push(i + 1);
         break;
       }
@@ -22,3 +22,15 @@ const solution = () => {
 const arr = [120, 125, 152, 130, 135, 135, 143, 127, 160]
 
 console.log(solution(arr));
+
+const solutionT = (arr) => {
+  let answer = [];
+  let sort = arr.slice();
+  sort.sort((a, b) => a - b);
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] !== sort[i]) answer.push(i+1);
+  }
+  return answer;
+}
+
+console.log(solutionT(arr));

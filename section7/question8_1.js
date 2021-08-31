@@ -10,6 +10,7 @@ const arr2 = [
   [3, 3],[1, 3], [2, 3]
 ]
 
+// 끝나는 타임이 같기 때문에 시작하는 타임 기준으로 sort
 const solutionG = (meeting) => {
   let cnt = 0;
   meeting.sort((a, b) => {

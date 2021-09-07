@@ -17,7 +17,7 @@ const solutionG = (meeting) => {
     if (a[1] === b[1]) return a[0] - b[0];
     else return a[1] - b[1];
   });
-  let et = 0;
+  let et = 0; //end time
   for (let i of meeting) {
     if (i[0] >= et) {
       cnt++;
